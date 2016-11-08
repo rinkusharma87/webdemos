@@ -16,5 +16,4 @@ public class DrawingCtrl {
 		shape1.draw();
 		shape2.draw();
 	}
-
 }
