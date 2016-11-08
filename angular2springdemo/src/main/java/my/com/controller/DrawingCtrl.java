@@ -3,17 +3,18 @@ package my.com.controller;
 import my.com.model.Shape;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class DrowingCtlr {
+public class DrawingCtrl {
 
 	public static void main(String[] args) {
 	//	AbstractApplicationContext context = new ClassPathXmlApplicationContext("SpringApplication-context.xml");
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringApplication-context.xml");
-		Shape shape =  (Shape) context.getBean("triangle");
+		Shape shape1 =  (Shape) context.getBean("circle");
+		Shape shape2 =  (Shape) context.getBean("triangle");
 		//context.registerShutdownHook();
-		shape.draw();
+		shape1.draw();
+		shape2.draw();
 	}
 
 }
